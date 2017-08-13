@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body, canvas {
+    background: #fcfcfc;
+}
+
+canvas {
+    display: block;
+    // opacity: 0.5;
+}
+
+#canvas {
+    z-index: 1;
+    position: absolute;
+}
+
+#letters{
+    display: none;
+}
+
+
+.site-footer {
+    position: absolute;
+    z-index: 2;
+
+    width  : 100%;
+    bottom : 40px;
+
+    text-align: center;
+
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.site-footer p, #type-me {
+    font-size: 16px;
+    margin: 0;
+    padding: 2px;
+    display: inline-block;
+}
+
+.site-footer img {
+    margin: 0 5px;
+}
+
+
+input#type-me {
+    border: 0;
+    border-bottom: 1px dotted #ccc;
+
+    // text-transform: uppercase;
+    background: transparent;
+    width: 120px;
+}
+
+#type-me:focus {
+    outline: 0;
+    border-bottom: 1px dotted #111;
+}
